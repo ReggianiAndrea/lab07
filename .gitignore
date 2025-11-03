@@ -1,4 +1,4 @@
-# File compilati Java
+# File compilati Java
 *.class
 
 # Directory di build e cache di Gradle
