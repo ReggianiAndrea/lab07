@@ -1,0 +1,20 @@
+# File compilati Java
+*.class
+
+# Directory di build e cache di Gradle
+build/
+.gradle/
+out/
+bin/
+
+# File di log
+*.log
+
+# Gradle wrapper (opzionale, se non vuoi che appaiano su GitHub)
+gradlew
+gradlew.bat
+gradle/wrapper/
+
+# File temporanei di sistema
+*.tmp
+*.DS_Store
