@@ -11,7 +11,6 @@ public class GenericPourpose<T> implements IterableWithPolicy<T>{
     rappresenta un test/condizione su elemento
     */
 
-
     /*2-ary constructor */
     public GenericPourpose(final T array[], Predicate<T> predicate){
         this.array=array;
@@ -28,7 +27,6 @@ public class GenericPourpose<T> implements IterableWithPolicy<T>{
             }
         }   );
     }
-
 
     @Override
     public Iterator<T> iterator(){
@@ -49,12 +47,10 @@ public class GenericPourpose<T> implements IterableWithPolicy<T>{
     that implements Iterator
      */
     public class InnerClass implements Iterator<T>{
-
         private int position=0;
 
         @Override
         public boolean hasNext() {
-
              while(position < array.length){
                 if(predicate.test(array[position])){
                     return true;
@@ -69,8 +65,7 @@ public class GenericPourpose<T> implements IterableWithPolicy<T>{
             if(!hasNext()){
                 throw new java.util.NoSuchElementException();
             }
-                return array[position++];
-            
+                return array[position++];   
         }
     }
 }
