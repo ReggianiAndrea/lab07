@@ -9,6 +9,20 @@ import java.util.Objects;
  */
 public final class MonthSorterNested implements MonthSorter {
 
+    enum Months{
+        gennaio,
+        febbraio,
+        marzo,
+        aprile,
+        maggio,
+        giugno,
+        luglio,
+        agosto,
+        settembre,
+        ottobre,
+        novembre,
+        dicembre
+    }
     @Override
     public Comparator<String> sortByDays() {
         return null;
